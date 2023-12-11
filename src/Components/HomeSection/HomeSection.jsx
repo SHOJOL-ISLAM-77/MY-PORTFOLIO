@@ -1,7 +1,7 @@
 
 const HomeSection = () => {
     return (
-        <div className=" bg-[#191919]">
+        <div className="rounded-2xl bg-[#191919] w-[900px]">
             Home section
         </div>
     );

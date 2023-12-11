@@ -1,0 +1,26 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 16px;
+
+    /* Position the tooltip */
+    position: absolute;
+    right: -100px;
+    top: 0;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    background-color: yellow;
+    color: #000000;
+    font-size: 16px;
+    right: -130px;
+    transition: 0.5s;
+}
