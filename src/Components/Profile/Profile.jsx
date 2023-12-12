@@ -20,9 +20,9 @@ const Profile = () => {
 
   return (
     <div className=" bg-[#191919] flex flex-col items-center rounded-2xl shadow-xl shadow-black mx-1">
-      <div className="max-h-[450px]">
+      <div className=" max-h-[450px] min-h-[450px]">
         <img
-          className="object-fill h-[450px]  lg:min-w-[450px] w-[320px] rounded-2xl"
+          className="object-fill min-h-[450px] h-[450px] lg:min-w-[450px] w-[320px] rounded-t-2xl"
           src="https://github.com/SHOJOL-ISLAM-77/MY-PORTFOLIO/blob/main/public/IMG_20231209_172316_124.jpg?raw=true"
           alt=""
         />

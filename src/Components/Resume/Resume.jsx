@@ -9,18 +9,18 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 const Resume = () => {
    
   return (
-    <div className="p-5">
-      <h2 className="border-b border-gray-600 py-2 text-3xl font-bold">
+    <div  className=" pt-6 p-4">
+      <h2 className="border-b pl-8 border-gray-600 py-2 text-3xl font-bold">
         MY RESUME
       </h2>
       <div className="flex py-4">
         <div className="flex-1 px-5">
-          <h3 className="border-b border-gray-600 text-2xl font-semibold">
+          <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaBriefcase className="inline mr-1 text-yellow-300" /> Skills
           </h3>
           <br />
           <div>
-            <ul className="text-gray-400 list-image-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=)]">
+            <ul className="list-inside text-gray-400 list-image-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=)]">
               <li>
                 <span className="font-bold text-yellow-300">Languages:</span>{" "}
                 HTML, CSS, JavaScript
@@ -58,12 +58,12 @@ const Resume = () => {
             </ul>
           </div>
 
-          <h3 className="border-b border-gray-600 text-2xl font-semibold  ">
+          <h3 className="border-b border-gray-600 text-2xl font-semibold  pb-3">
             Soft Skills
           </h3>
           <br />
           <div>
-            <ul className="text-gray-400 list-image-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=)]">
+            <ul className="list-inside text-gray-400 list-image-[url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNCAxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsPSIjMzhiZGY4Ij48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMy42ODUuMTUzYS43NTIuNzUyIDAgMCAxIC4xNDMgMS4wNTJsLTggMTAuNWEuNzUuNzUgMCAwIDEtMS4xMjcuMDc1bC00LjUtNC41YS43NS43NSAwIDAgMSAxLjA2LTEuMDZsMy44OTQgMy44OTMgNy40OC05LjgxN2EuNzUuNzUgMCAwIDEgMS4wNS0uMTQzWiIgLz48L3N2Zz4=)]">
               <li>Hard Working</li>
               <br />
               <li>Responsibility</li>
@@ -73,7 +73,7 @@ const Resume = () => {
             </ul>
           </div>
          
-          <h3 className="border-b border-gray-600 text-2xl font-semibold">
+          <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaCode className="inline mr-1 text-yellow-300" /> Coding:
           </h3>
           <br />
@@ -94,7 +94,7 @@ const Resume = () => {
           <br />
         </div>
         <div className="flex-1 border-l border-gray-600 px-5">
-          <h3 className="border-b border-gray-600 text-2xl font-semibold">
+          <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaGraduationCap className="inline mr-1 text-yellow-300" />{" "}
             Education
           </h3>
@@ -128,7 +128,7 @@ const Resume = () => {
             </p>
           </div>
           <br />
-          <h3 className="border-b border-gray-600 text-2xl font-semibold">
+          <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaLanguage className="inline mr-1 text-yellow-300" /> Language
           </h3>
           <br />

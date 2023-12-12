@@ -2,15 +2,15 @@ import { FaChartLine, FaCode, FaPollH } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div>
+    <div className="p-4">
       <div>
-        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400">
+        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400 pl-8">
           <span className="text-yellow-300">About</span> Me
         </h2>
         <div className="flex items-center">
           <div className="px-6 flex-1  font-medium">
             Hello! I am Shojol Islam <br /> developer from Bangladesh, Kurigram.{" "}
-            <br /> I have no experience but I create web site <br /> , also I am
+            <br /> I have no experience but I create websites, <br /> also I am
             good at React JS. <br /> I love to talk with you about our unique.
           </div>
           <div className="p-6 flex-1 border-l border-gray-500 text-gray-400">
@@ -42,7 +42,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400">
+        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400 pl-8">
           <span className="text-yellow-300">My</span> Service
         </h2>
         <div className="flex items-center justify-center h-96">
@@ -61,7 +61,7 @@ const AboutMe = () => {
         </div>
       </div>
       <div>
-        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400">
+        <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400 pl-8">
           <span className="text-yellow-300">Fun</span> Fact
         </h2>
         <div className="flex justify-center">
