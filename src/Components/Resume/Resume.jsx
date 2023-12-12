@@ -5,15 +5,19 @@ import {
   FaLanguage,
 } from "react-icons/fa";
 import ProgressBar from "../ProgressBar/ProgressBar";
+import { Helmet } from "react-helmet-async";
 
 const Resume = () => {
    
   return (
     <div  className=" pt-6 p-4">
+      <Helmet>
+        <title>Resume || Shojol Islam</title>
+      </Helmet>
       <h2 className="border-b pl-8 border-gray-600 py-2 text-3xl font-bold">
         MY RESUME
       </h2>
-      <div className="flex py-4">
+      <div className="flex py-4 flex-col lg:flex-row">
         <div className="flex-1 px-5">
           <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaBriefcase className="inline mr-1 text-yellow-300" /> Skills
@@ -93,7 +97,7 @@ const Resume = () => {
           </div>
           <br />
         </div>
-        <div className="flex-1 border-l border-gray-600 px-5">
+        <div className="flex-1 lg:border-l border-gray-600 px-5">
           <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaGraduationCap className="inline mr-1 text-yellow-300" />{" "}
             Education

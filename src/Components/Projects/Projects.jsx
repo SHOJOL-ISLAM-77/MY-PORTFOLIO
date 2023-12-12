@@ -22,10 +22,14 @@ import mysoft3 from "../../assets/My soft/mysoft (3).png";
 import mysoft4 from "../../assets/My soft/mysoft (4).png";
 import mysoft5 from "../../assets/My soft/mysoft (5).png";
 import mysoft6 from "../../assets/My soft/mysoft (6).png";
+import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
   return (
     <div className="lg:min-h-[810px] p-4">
+      <Helmet>
+        <title>Project || Shojol Islam</title>
+      </Helmet>
       <h2 className="text-white py-4 text-2xl border-b font-bold px-4 border-gray-400 pl-8">
         <span className="text-yellow-300">Recent</span> Projects
       </h2>
@@ -89,10 +93,10 @@ const Projects = () => {
       <br />
       <div>
         <h3 className="text-xl font-bold py-8">2. Service Swap Hub</h3>
-        <div className="w-full min-h-[350px]">
+        <div className="w-full ">
           <Carousel autoPlay={true} infiniteLoop={true}>
             <div>
-              <img src={service1} />
+              <img  src={service1} />
             </div>
             <div>
               <img src={service2} />
@@ -149,7 +153,7 @@ const Projects = () => {
       </div>
       <br />
       <div>
-        <h3 className="text-xl font-bold py-8">1. My Soft</h3>
+        <h3 className="text-xl font-bold py-8">3. My Soft</h3>
         <div className="w-full min-h-[350px]">
           <Carousel autoPlay={true} infiniteLoop={true}>
             <div>

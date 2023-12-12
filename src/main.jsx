@@ -7,12 +7,13 @@ import AboutMe from "./Components/AboutMe/AboutMe.jsx";
 import Resume from "./Components/Resume/Resume.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
 import ContactMe from "./Components/ContactMe/ContactMe.jsx";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-  
+
     children: [
       {
         path: "/",
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
         element: <Resume />,
       },
       {
-        path: "/project", 
+        path: "/project",
         element: <Projects />,
       },
       {
@@ -35,7 +36,9 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <HelmetProvider>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
+  </HelmetProvider>
 );

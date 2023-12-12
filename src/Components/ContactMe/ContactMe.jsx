@@ -3,6 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Helmet } from "react-helmet-async";
 
 const ContactMe = () => {
   const form = useRef();
@@ -40,11 +41,14 @@ const ContactMe = () => {
 
   return (
     <div className="py-8 p-4 min-h-[810px]">
+      <Helmet>
+        <title>Contact Me || Shojol Islam</title>
+      </Helmet>
       <h2 className="text-2xl font-semibold border-b border-gray-600 pl-6 px-3 pb-3">
         Get In Touch
       </h2>
-      <div className="flex py-6">
-        <div className="p-6 flex-1 text-gray-400">
+      <div className="flex flex-col py-6">
+        <div className="lg:p-6  flex-1 text-gray-400">
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Address:
@@ -59,12 +63,12 @@ const ContactMe = () => {
             <span>+8801532316559</span>
           </div>
         </div>
-        <div className="p-6 flex-1 text-gray-400">
+        <div className="lg:p-6 flex-1 text-gray-400">
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Email:
             </span>{" "}
-            <span>mdshojolislamshojib@gmail.com</span>
+            <span>sh0j0l3875891@gmail.com</span>
           </div>
           <br />
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
@@ -82,7 +86,7 @@ const ContactMe = () => {
       </h2>
       <div>
         <form ref={form} onSubmit={sendEmail} className="p-6">
-          <div className="flex gap-6">
+          <div className="flex flex-col lg:flex-row gap-6">
             <input
               className="flex-grow outline-yellow-300 focus:border-0 border-2 h-12 bg-transparent border-gray-600 p-2"
               placeholder="Type Your Name"
@@ -107,7 +111,7 @@ const ContactMe = () => {
             placeholder="Type Your Message"
             className="border-gray-600 p-3 w-full bg-transparent border-2 outline-yellow-300 focus:border-0"
           ></textarea>
-          <div className="flex justify-center items-center py-5 hover:text-yellow-300 gap-1 text-lg">
+          <div className="flex justify-center items-center py-5 hover:text-yellow-300 gap-2 text-lg">
             <input type="submit" value="Send Message" />
             <FaTelegramPlane className="text-xl" />
           </div>
