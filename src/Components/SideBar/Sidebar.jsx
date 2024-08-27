@@ -10,7 +10,7 @@ import "./sidebar.css";
 
 const Sidebar = () => {
   return (
-    <div className=" bg-[#191919] lg:my-32 mx-5 lg:w-[70px] space-x-10 lg:space-x-0 px-3 w-[340px] justify-center rounded-3xl flex lg:flex-col lg:space-y-4 lg:justify-evenly text-xl h-[70px] lg:h-[300px] items-center">
+    <div className=" bg-[#191919] lg:my-32 mx-5 lg:w-[70px] space-x-10 lg:space-x-0 px-3 w-[340px] justify-center rounded-2xl flex lg:flex-col lg:space-y-4 lg:justify-evenly text-xl h-[70px] lg:h-[300px] items-center">
       <NavLink
         to="/"
         className={({ isActive, isPending }) =>

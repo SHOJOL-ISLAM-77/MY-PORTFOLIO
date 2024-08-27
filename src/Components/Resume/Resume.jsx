@@ -8,9 +8,8 @@ import ProgressBar from "../ProgressBar/ProgressBar";
 import { Helmet } from "react-helmet-async";
 
 const Resume = () => {
-   
   return (
-    <div  className=" pt-6 p-4">
+    <div className=" pt-6 p-4">
       <Helmet>
         <title>Resume || Shojol Islam</title>
       </Helmet>
@@ -32,12 +31,12 @@ const Resume = () => {
               <br />
               <li>
                 <span className="font-bold text-yellow-300">Front-end:</span>{" "}
-                React
+                React, Redux
               </li>
               <br />
               <li>
                 <span className="font-bold text-yellow-300">Back-end:</span>{" "}
-                Node.js, Express
+                Node.js, Express, Mongoose
               </li>
               <br />
               <li>
@@ -76,24 +75,24 @@ const Resume = () => {
               <br />
             </ul>
           </div>
-         
+
           <h3 className="border-b border-gray-600 text-2xl font-semibold pb-3">
             <FaCode className="inline mr-1 text-yellow-300" /> Coding:
           </h3>
           <br />
           <div>
-            <h2>React JS:</h2>            
-            <ProgressBar color="yellow" progress="90"/>
+            <h2>React JS:</h2>
+            <ProgressBar color="yellow" progress="90" />
           </div>
           <br />
           <div>
-          <h2>Javascript:</h2>            
-            <ProgressBar color="yellow" progress="70"/>
+            <h2>Javascript:</h2>
+            <ProgressBar color="yellow" progress="70" />
           </div>
           <br />
           <div>
-          <h2>Node JS:</h2>            
-            <ProgressBar color="yellow" progress="70"/>
+            <h2>Node JS:</h2>
+            <ProgressBar color="yellow" progress="70" />
           </div>
           <br />
         </div>
@@ -137,18 +136,18 @@ const Resume = () => {
           </h3>
           <br />
           <div>
-            <h2>Bangla (native)</h2>            
-            <ProgressBar color="yellow" progress="100"/>
+            <h2>Bangla (native)</h2>
+            <ProgressBar color="yellow" progress="100" />
           </div>
           <br />
           <div>
-          <h2>Hindi</h2>            
-            <ProgressBar color="yellow" progress="70"/>
+            <h2>Hindi</h2>
+            <ProgressBar color="yellow" progress="70" />
           </div>
           <br />
           <div>
-          <h2>English:</h2>            
-            <ProgressBar color="yellow" progress="50"/>
+            <h2>English:</h2>
+            <ProgressBar color="yellow" progress="50" />
           </div>
           <br />
         </div>

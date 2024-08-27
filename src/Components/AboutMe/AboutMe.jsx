@@ -84,7 +84,7 @@ const AboutMe = () => {
           <div className="flex items-center justify-center">
             <div className="px-6 font-medium border-x border-b p-5 text-center">
               <FaChartLine className="text-3xl inline-flex justify-center items-center text-yellow-300 my-2" />
-              <p>Finish a source</p>
+              <p>Finish a course</p>
             </div>
           </div>
         </div>

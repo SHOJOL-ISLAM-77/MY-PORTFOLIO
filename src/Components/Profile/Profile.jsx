@@ -5,25 +5,15 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import { Typewriter } from "react-simple-typewriter";
 
 const Profile = () => {
-  const googleDrivePreviewUrl =
-    "https://drive.google.com/file/d/1uA5EO7odXcJyddDt1aW7T6hijUtaWsp-/view?usp=sharing";
-  const fileId = googleDrivePreviewUrl.split("/file/d/")[1].split("/view")[0];
-  const modifiedDownloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
-
-  const handleDownload = () => {
-    window.open(modifiedDownloadUrl, "_blank");
-  };
-  // min-h-[450px] lg:h-[450px] lg:min-w-[450px] w-[320px] h-[320px] 
   return (
     <div className=" bg-[#191919] flex flex-col items-center rounded-2xl shadow-xl shadow-black mx-1  m-3">
       <div>
         <img
           className="object-fill lg:min-h-[450px] lg:h-[450px] lg:min-w-[450px] w-[350px] h-[360px] rounded-t-2xl"
-          src="https://github.com/SHOJOL-ISLAM-77/MY-PORTFOLIO/blob/main/public/IMG_20231209_172316_124.jpg?raw=true"
+          src="https://avatars.githubusercontent.com/u/138320818?s=400&u=bdcea28c82fc5a93e8009883235ffb7b5012534b&v=4"
           alt=""
         />
       </div>
@@ -80,12 +70,16 @@ const Profile = () => {
       </div>
       <div className="lg:h-40 h-20"></div>
       <div className="p-5 border-t w-full text-center ">
-        <Link onClick={handleDownload} className="hover:text-yellow-300">
-          Download Resume
+        <a
+          className="hover:text-yellow-300"
+          href="/src/assets/Resume.pdf"
+          download
+        >
+          Download Resume{" "}
           <span className="px-2">
             <FaDownload className="inline" />
           </span>
-        </Link>
+        </a>
       </div>
     </div>
   );

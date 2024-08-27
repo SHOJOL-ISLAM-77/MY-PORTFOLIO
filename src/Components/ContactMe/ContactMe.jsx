@@ -12,10 +12,10 @@ const ContactMe = () => {
 
     emailjs
       .sendForm(
-        "service_s4sxxex",
-        "template_ugtwf58",
+        "service_s4sxxex", // Your EmailJS service ID
+        "template_ugtwf58", // Your EmailJS template ID
         form.current,
-        "okMXDPXJsfk3t1XOb"
+        "39NPcXqH3t7f1WnaU" // Your EmailJS user ID
       )
       .then(
         (result) => {
@@ -34,6 +34,16 @@ const ContactMe = () => {
         },
         (error) => {
           console.log(error.text);
+          toast.error("Failed to send email. Please try again later.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
         }
       );
     e.target.reset();
@@ -52,29 +62,29 @@ const ContactMe = () => {
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Address:
-            </span>{" "}
+            </span>
             <span>Kurigram, Bangladesh</span>
           </div>
           <br />
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Phone:
-            </span>{" "}
-            <span>+8801532316559</span>
+            </span>
+            <span>+880 1532316559</span>
           </div>
         </div>
         <div className="lg:p-6 flex-1 text-gray-400">
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Email:
-            </span>{" "}
-            <span>sh0j0l3875891@gmail.com</span>
+            </span>
+            <span>mdshojolislamshojib@gmail.com</span>
           </div>
           <br />
           <div className="flex justify-between border-b-[0.1px] py-2 border-gray-500 font-medium">
             <span className="bg-yellow-300 text-black px-4 py-1 rounded-md ">
               Freelance:
-            </span>{" "}
+            </span>
             <span>Unavailable</span>
           </div>
         </div>
@@ -111,8 +121,8 @@ const ContactMe = () => {
             placeholder="Type Your Message"
             className="border-gray-600 p-3 w-full bg-transparent border-2 outline-yellow-300 focus:border-0"
           ></textarea>
-          <div className="flex justify-center items-center py-5 hover:text-yellow-300 gap-2 text-lg">
-            <input type="submit" value="Send Message" />
+          <div className="flex justify-center items-center py-5 hover:text-yellow-300 cursor-pointer gap-2 text-lg">
+            <button type="submit">Send Massage</button>
             <FaTelegramPlane className="text-xl" />
           </div>
           <ToastContainer
